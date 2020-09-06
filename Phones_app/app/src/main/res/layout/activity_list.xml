@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_activity_list"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        style="@style/ToolBarView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_list_toolbar">
+        <TextView
+            android:id="@+id/tv_list_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/ToolBarTextView"/>
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_appbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="Search"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/showListActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:transitionName="category_transition"
+        android:layout_below="@+id/list_toolbar">
+
+        <TextView
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:id="@+id/list_title"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:transitionName="categoryTransition"/>
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/showListActivity"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10sp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        />
+
+    <TextView
+        android:id="@+id/empty_arrayList_view"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

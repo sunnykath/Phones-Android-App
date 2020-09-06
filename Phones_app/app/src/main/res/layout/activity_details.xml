@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_activity_details"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFF">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/image_slider"
+            android:layout_below="@+id/details_toolbar"
+            />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/details_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/ToolBarView">
+        </androidx.appcompat.widget.Toolbar>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_slider"
+            android:id="@+id/details_table"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="iPhone SE 2020"
+                    android:textSize="34sp"
+                    android:id="@+id/phone_name"
+                    android:layout_span="2"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Price"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:text="$ 289.99"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    android:id="@+id/phone_price"
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="OS"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:text="iOS"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    android:id="@+id/phone_os"
+                    />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:text="Storage"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:text="128 GB"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    android:id="@+id/phone_storage"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Rating"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:text="4.3"
+                    android:textSize="20sp"
+                    android:id="@+id/phone_rating"
+                    android:gravity="end"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Similar Phones"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/details_table"
+            android:id="@+id/similarText"
+            android:layout_marginTop="40dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_similar"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/similarText"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

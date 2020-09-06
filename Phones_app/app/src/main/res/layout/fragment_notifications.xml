@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_notifications_fragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        style="@style/CategoryCardStyle">
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/notifications_push_notifications_switch"
+            android:layout_marginStart="10dp"
+            android:text="Push notifications"
+            style="@style/CategoryTextViews"
+            android:textSize="25sp"
+            android:checked="false"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        style="@style/CategoryCardStyle">
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/notifications_sms_notifications_switch"
+            android:layout_marginStart="10dp"
+            android:text="SMS notifications"
+            style="@style/CategoryTextViews"
+            android:textSize="25sp"
+            android:checked="false"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        style="@style/CategoryCardStyle">
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/notifications_email_notifications_switch"
+            android:layout_marginStart="10dp"
+            android:text="Email notifications"
+            style="@style/CategoryTextViews"
+            android:textSize="25sp"
+            android:checked="false"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

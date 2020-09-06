@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="60dp"
+            android:layout_height="72dp"
+            android:src="@drawable/apple_iphone_se_1"
+            android:id="@+id/phone_image_view"
+            android:layout_centerVertical="true"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/phone_image_view"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:id="@+id/phone_name_text_view"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_storage_text_view"
+            android:textSize="16sp"
+            android:layout_alignStart="@id/phone_name_text_view"
+            android:layout_below="@+id/phone_name_text_view"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_price_text_view"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/phone_storage_text_view"
+            android:layout_alignParentEnd="true"
+        />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_rating_view"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_alignStart="@id/phone_name_text_view"
+            android:layout_alignBottom="@id/phone_price_text_view"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            android:rating="4.3"
+
+        />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

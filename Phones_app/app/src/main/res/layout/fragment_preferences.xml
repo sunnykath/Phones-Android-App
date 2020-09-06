@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_preferences_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        style="@style/CategoryCardStyle">
+
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/settings_main_darkmode_switch"
+            android:layout_marginStart="10dp"
+            android:text="DarkMode"
+            android:textSize="25sp"
+            android:checked="false"
+            style="@style/CategoryTextViews"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        style="@style/CategoryCardStyle">
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/settings_main_blue_light_switch"
+            android:layout_marginStart="10dp"
+            android:text="Blue Light Filter"
+            style="@style/CategoryTextViews"
+            android:textSize="25sp"
+            android:checked="false"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        style="@style/CategoryCardStyle">
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/preferences_sound_switch"
+            android:layout_marginStart="10dp"
+            android:text="Sound effects"
+            style="@style/CategoryTextViews"
+            android:textSize="25sp"
+            android:checked="false"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        style="@style/CategoryCardStyle">
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/preferences_display_usd_switch"
+            android:layout_marginStart="10dp"
+            android:text="Display price as USD"
+            style="@style/CategoryTextViews"
+            android:textSize="25sp"
+            android:checked="false"/>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="navigation_drawer">
+    <group
+        android:id="@+id/home_icon"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_home"
+            android:title="Home"
+            app:showAsAction="never" />
+    </group>
+
+    <group
+        android:id="@+id/overflow_items"
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/action_account"
+            android:title="Account"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_notifications"
+            android:title="Notifications"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_preferences"
+            android:title="Preferences"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_help_and_feedback"
+            android:title="Help and Feedback"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_about"
+            android:title="About"
+            app:showAsAction="never" />
+    </group>
+</menu>

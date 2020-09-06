@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/colorPrimary"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp"
+    android:layout_margin="5dp"
+    android:id="@+id/recycler_view_card">
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="170dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:id="@+id/recycler_phone_image"
+            android:src="@drawable/apple_logo"
+            android:padding="8dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_phone_name"
+            android:layout_below="@+id/recycler_phone_image"
+            android:text="Lumia 8s plus"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_phone_price"
+            android:text="$255.55"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -14,18 +14,16 @@ The settings menu can be accessed from the top left icon.
 In the main activity the user can browse the *Top Picks* section for each category. It displays all 3 categories that the user can browse.
 The user can also *search* for a specific item from the toolbar.
 
-![Main Activity](Phones_app/imgs/main_activity.jpg) 
+<img src="Phones_app/imgs/main_activity.jpg" height="500"> <img src="Phones_app/imgs/settings_fragment.jpg" height="500">
 
-![Settings Menu](Phones_app/imgs/settings_fragment.jpg)
 
 #### List Activiy 
 This activity can be accessed from the main by either clicking on one of the categories or searching for a spcific phone.
 It displays a list of all the related phones. The user can see the phone name, the storage capacity, phone rating and the price.
 The user can also still search the category by using the search icon on the top right.
 
-![Main Activity](Phones_app/imgs/list_activity.jpg) 
+<img src="Phones_app/imgs/list_activity.jpg" height="500"> <img src="Phones_app/imgs/search_activity.jpg" height="500">
 
-![Search Results](Phones_app/imgs/search_activity.jpg) 
 
 #### Details Activvity
 The user can click on the phone cards from either the search results or the category list.
@@ -34,4 +32,5 @@ The user can also browse through 3 different images of the phone on the top.
 
 This activity also has a *Similar Phones* section at the bottom.
 
-![Details Activity](Phones_app/imgs/details_activity.jpg) 
+
+<img src="Phones_app/imgs/details_activity.jpg" height="500">
